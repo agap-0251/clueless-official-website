@@ -6,6 +6,8 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Link from 'next/link';
 
+const date = new Date().getFullYear()
+
 const Footer: React.FC = () => {
   const ClueLogo = (color: string) => {
     return (
@@ -127,7 +129,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <div className="sm:px-40 flex justify-between text-sm py-10 bg-[#1B1B1B] text-white flex-col items-center sm:flex-row shadow-xl dark:bg-zinc-900">
-        <p>Copyright &copy; by ClueLess 2023</p>
+        <p>Copyright &copy; by ClueLess {date}</p>
         <p className="mt-5 sm:mt-0">Powered by Clueless</p>
       </div>
     </>
